@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+    <head><title>jee mains form</title>
+         <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Sakshi Asati">
+   <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <style>
+      body{
+        background-color: powderblue;
+          }
+      marquee{
+         color:white;
+      }
+      a{
+        padding:3px;
+        color:black;
+        background-color: white;
+        text-decoration: none;
+        border :1px solid gray;
+      }
+     </style>
+
+
+
+
+    </head>
+    <body >
+       <marquee bgcolor = "black" ><h2> WELCOME TO THE GOVERNMENT SITE FOR REGISTRATION</h2> </marquee> 
+      <center>
+      <form  action="nextpage.html" autocomplete="false" >
+        <table  >
+          <tr ><h2 ><u>General Form</u></h2>
+          </tr>
+          <tr>
+
+            <td >  <b>Student Name   </b></td>
+            <td>  <input type ="text" name = "student" id = "hey" ><br><br></td>
+          </tr>
+          <tr>
+            <td>
+                <b>Fathers name   </b></td>
+
+            <td>    <input type ="text" ><br><br></td>
+          </tr>
+          <tr>
+              <td>  <b>Mothers name </b></td>
+              <td>  <input type ="text"><br><br></td>
+          </tr>
+          <tr>
+
+            <td>    <b>Mobile number  </b></td>
+
+            <td>    <input type ="text"><br><br></td>
+
+          </tr>
+          <tr>
+            <td>
+              <b>Gender </b>
+            </td>
+            <td>
+              <input type ="radio"><span>Male</span>
+            <input type ="radio"><span>Female</span>
+            </td>
+          </tr>
+          <tr>
+              <td>  <b>Tenth Marks</b> </td>
+               <td> <input type ="text"><br><br></td>
+          </tr>
+          <tr>
+              <td>  <b>Twelth Marks </b></td>
+              <td>  <input type ="text" ><br><br></td>
+          </tr>
+          <tr>
+              <td>  <b>Select Board</b> </td><td><select><option>CBSE</option><option>MP</option><option>ICSE</option></select><br><br></td>
+          </tr>
+           <tr>
+              <td>  <b>Select Course</b> </td><td><select><option>B-Tech</option><option>BCA</option><option>BBA</option><option>B-Pharma</option></select><br><br></td>
+          </tr>
+      
+          <tr>
+              <td>  <b>Age  </b></td>
+              <td> <input type ="text"><br><br></td>
+          </tr>
+          <tr>
+             <td><b>Address</b></td>
+              <td> <input type ="text" name = "permanent" placeholder = "permanent"><br></td>
+          </tr>
+          <br><br>
+          
+         
+      </table>
+     
+        <br>
+        <input type = "button" name = "submit" value = "Submit"  onclick = "confirm()">
+        <a href = "nextpage.html"> Next </a> 
+       
+     
+        </form>
+        </center>
+        
+        <script>
+          function confirm(){
+            var name = document.getElementById("hey").value;
+            window.alert(name + " your registration is confirmed \n Thanks for registering")
+          }
+
+        </script>
+        
+          
+    
+    </body>
+</html>
